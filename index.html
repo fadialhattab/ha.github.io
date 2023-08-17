@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="container">
+    <form class="login-form">
+        <h1>Account Login</h1>
+        <div class="flex-input">
+         
+            <input type="text" placeholder="User Name">
+        </div>
+        <div class="flex-input">
+           
+            <input type="password" placeholder="Password">
+        </div>
+       
+            <input type="button" value="LOGIN">
+        </div>
+        <div class="flex-container">
+           
+    <span> <input type="checkbox"> remember me</span>
+            <a href="#">Forgot Password?</a>
+        </div>
+    </form>
+</body>
+<style>
+
+    .container{
+        background-image: url("mountain.jpg") ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin:0;
+        padding: 0;
+        background-color: gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .login-form{
+        background-color: rgba(219, 211, 211,0.7);
+      
+        padding: 10px;
+        width:300px;
+    }
+    .flex-input{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+       
+    }
+    input[type="text"],[type="password"]{
+        flex:1;
+        padding: 5px;
+        border-radius: 20px;
+        border: none;
+        background-color: red;
+        color: white;
+    }
+   
+
+ input[type="button"]{
+    width: 100%;
+    background-color: rgb(7, 94, 94);
+    font-size: 16px;
+    padding: 10px;
+    color: azure;
+    border: none;
+    margin:15px 0;
+}
+input[type="button"]:hover{
+    cursor: pointer;
+    background-color: rgb(2, 24, 24);
+
+}
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-container a{
+    text-decoration: none;
+    color: blue;
+}
+@media all and (max-width:480px){
+    .flex-input{
+        flex-direction: column;
+    }
+  
+}
+
+</style>
+</html>
